@@ -8,3 +8,28 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Environment variables
+.env
+.env.local
+
+# Database
+*.db
+*.sqlite
+
+# Model weights
+*.pth
+*.pt
+*.ckpt
+
+# Temporary files
+*.crdownload
+archive.zip
+archive.zip:Zone.Identifier
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

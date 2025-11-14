@@ -1,0 +1,23 @@
+{
+  "folders": [
+    {
+      "name": "Root",
+      "path": "."
+    },
+    {
+      "name": "API",
+      "path": "./api"
+    },
+    {
+      "name": "Coldstart (FL)",
+      "path": "./coldstart"
+    },
+    {
+      "name": "UI",
+      "path": "./ui"
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python"
+  }
+}
