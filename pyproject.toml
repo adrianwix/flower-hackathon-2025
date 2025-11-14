@@ -1,0 +1,7 @@
+[project]
+name = "flower-hackathon"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = ["flwr[simulation]>=1.23.0"]
