@@ -19,3 +19,6 @@ services:
     rootDir: ui
     buildCommand: npm install && npm run build
     staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://flower-hackathon-api.onrender.com
