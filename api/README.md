@@ -25,7 +25,19 @@ The API will be available at `http://localhost:8000`
 
 ## Deployment on Render
 
-### Option 1: Deploy via Dashboard
+### Option 1: Deploy Both Services via Blueprint (Recommended)
+
+A `render.yaml` file is located at the **root of the repository** that configures both the API and UI for deployment.
+
+1. Go to [Render Dashboard](https://dashboard.render.com/)
+2. Click "New +" and select "Blueprint"
+3. Connect your repository and Render will detect the `render.yaml` file
+4. Review the services:
+   - **flower-hackathon-api**: FastAPI backend
+   - **flower-hackathon-ui**: React frontend (static site)
+5. Click "Apply" to deploy both services
+
+### Option 2: Deploy API Only via Dashboard
 
 1. Go to [Render Dashboard](https://dashboard.render.com/)
 2. Click "New +" and select "Web Service"
@@ -38,12 +50,9 @@ The API will be available at `http://localhost:8000`
    - **Start Command**: `uv run uvicorn main:app --host 0.0.0.0 --port $PORT`
 5. Click "Create Web Service"
 
-### Option 2: Deploy via Blueprint (render.yaml)
+### Environment Variables
 
-1. Go to [Render Dashboard](https://dashboard.render.com/)
-2. Click "New +" and select "Blueprint"
-3. Connect your repository and select the `api/render.yaml` file
-4. Review and create the service
+After deployment, you may want to configure CORS in the API to allow requests from your frontend domain. Update the `allow_origins` in `main.py` with your deployed UI URL.
 
 ### Free Tier
 

@@ -1,0 +1,21 @@
+services:
+  # FastAPI Backend
+  - type: web
+    plan: free
+    name: flower-hackathon-api
+    env: python
+    region: frankfurt
+    rootDir: api
+    buildCommand: pip install uv && uv sync
+    startCommand: uv run uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+
+  # React Frontend (Static Site)
+  - type: web
+    name: flower-hackathon-ui
+    env: static
+    rootDir: ui
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
