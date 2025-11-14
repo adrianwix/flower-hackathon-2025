@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: flower-hackathon-api
+    env: python
+    region: oregon
+    buildCommand: pip install uv && uv sync
+    startCommand: uv run uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0

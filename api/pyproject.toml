@@ -1,0 +1,6 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "Flower Hackathon API"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.121.2", "uvicorn[standard]>=0.38.0"]
