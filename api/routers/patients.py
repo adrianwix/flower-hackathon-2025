@@ -6,12 +6,14 @@ from typing import Any, Dict, List, Optional
 from datetime import datetime
 
 from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
+from fastapi.responses import Response
 from pydantic import BaseModel
 
-from sqlmodel import Session
+from sqlmodel import Session, select
 
 from dependencies import get_session
 from services import PatientService
+from models import Image
 
 
 class DoctorLabelUpdate(BaseModel):
@@ -118,6 +120,35 @@ async def create_exam_with_image(
     )
 
     return result
+
+
+@router.get("/images/{image_id}")
+async def get_image(
+    image_id: int,
+    session: Session = Depends(get_session),
+) -> Response:
+    """
+    Get the actual image bytes for an X-ray image.
+
+    Args:
+        image_id: Image ID
+
+    Returns:
+        Image bytes with appropriate content type
+    """
+    statement = select(Image).where(Image.id == image_id)
+    image = session.exec(statement).first()
+
+    if not image:
+        raise HTTPException(status_code=404, detail="Image not found")
+
+    return Response(
+        content=image.image_bytes,
+        media_type=image.mime_type,
+        headers={
+            "Content-Disposition": f'inline; filename="{image.filename}"',
+        },
+    )
 
 
 @router.put("/images/{image_id}/labels")

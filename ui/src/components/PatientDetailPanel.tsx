@@ -562,6 +562,29 @@ const PatientDetailPanel: React.FC<PatientDetailPanelProps> = ({ patientId, onBa
                         {/* Expanded Image Details */}
                         {expandedImage === image.id && (
                           <div style={{ padding: '15px', background: 'white' }}>
+                            {/* X-ray Image Display */}
+                            <div style={{ marginBottom: '20px', textAlign: 'center' }}>
+                              <img
+                                src={`${API_URL}/patients/images/${image.id}`}
+                                alt={image.filename}
+                                style={{
+                                  maxWidth: '100%',
+                                  maxHeight: '500px',
+                                  borderRadius: '8px',
+                                  boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+                                  border: '1px solid #dee2e6'
+                                }}
+                                onError={(e) => {
+                                  const target = e.target as HTMLImageElement;
+                                  target.style.display = 'none';
+                                  const parent = target.parentElement;
+                                  if (parent) {
+                                    parent.innerHTML = '<div style="padding: 40px; background: #f8f9fa; color: #666; border-radius: 8px;">📷 Image could not be loaded</div>';
+                                  }
+                                }}
+                              />
+                            </div>
+
                             {/* ML Predictions */}
                             {Object.keys(image.ml_predictions.multi_label_predictions).length > 0 && (
                               <div style={{ marginBottom: '15px' }}>
