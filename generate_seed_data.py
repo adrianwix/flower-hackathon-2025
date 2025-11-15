@@ -440,7 +440,6 @@ def copy_images_and_create_seeds(
                     "view_position": str(row["View Position"])
                     if pd.notna(row["View Position"])
                     else None,
-                    "ground_truth_labels": finding_labels,
                     "follow_up_number": int(row["Follow-up #"])
                     if pd.notna(row["Follow-up #"])
                     else 0,

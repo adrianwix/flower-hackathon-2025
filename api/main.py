@@ -12,7 +12,7 @@ from sqlmodel import Session
 
 from config import API_TITLE, API_DESCRIPTION, API_VERSION, CORS_ORIGINS
 from database import create_db_and_tables, init_pathologies, engine
-from routers import health_router, predictions_router, metadata_router
+from routers import health_router, predictions_router, metadata_router, patients_router
 
 
 @asynccontextmanager
@@ -51,3 +51,4 @@ app.add_middleware(
 app.include_router(health_router)
 app.include_router(predictions_router)
 app.include_router(metadata_router)
+app.include_router(patients_router)

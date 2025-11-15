@@ -17,17 +17,16 @@ async def predict_image(
 
     Args:
         image_bytes: Raw image bytes
-        model_version_name: Model version to use
         threshold: Probability threshold
 
     Returns:
         Prediction results
     """
-    # Preprocess image
-    image_tensor = preprocess_image(image_bytes)
+    # Preprocess image for both models
+    multilabel_tensor, binary_tensor = preprocess_image(image_bytes)
 
     # Get model and run prediction
     model = get_model()
-    predictions = model.predict_all(image_tensor, threshold)
+    predictions = model.predict_all(multilabel_tensor, binary_tensor, threshold)
 
     return predictions

@@ -287,7 +287,6 @@ with Session(engine) as session:
         filename='xray.png',
         image_bytes=image_bytes,
         mime_type='image/png',
-        ground_truth_labels=['Cardiomegaly'],  # Optional
     )
     session.add(image)
     session.commit()

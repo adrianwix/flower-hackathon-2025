@@ -2,7 +2,7 @@
 Prediction service for ML inference and database persistence.
 """
 
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional
 
 from fastapi import HTTPException
 from sqlmodel import Session, select
@@ -109,16 +109,18 @@ class PredictionService:
             select(ModelVersion).where(ModelVersion.name == model_version_name)
         ).first()
 
-        if not model_version:
-            model_version = ModelVersion(
-                name=model_version_name,
-                description="Mock model for demonstration purposes",
-            )
-            self.session.add(model_version)
-            self.session.commit()
-            self.session.refresh(model_version)
+        if model_version:
+            return model_version
 
-        return model_version
+        # Only create if not found, and do NOT set id manually
+        new_model_version = ModelVersion(
+            name=model_version_name,
+            description="Mock model for demonstration purposes",
+        )
+        self.session.add(new_model_version)
+        self.session.commit()
+        self.session.refresh(new_model_version)
+        return new_model_version
 
     def _save_binary_prediction(
         self,
@@ -171,7 +173,7 @@ class PredictionService:
         self,
         image_id: int,
         model_version: ModelVersion,
-        multi_label_predictions: Dict[str, Tuple[bool, float]],
+        multi_label_predictions: Dict[str, Dict[str, object]],
     ) -> List[int]:
         """
         Save multi-label predictions to database.
@@ -186,10 +188,22 @@ class PredictionService:
         """
         saved_predictions: List[int] = []
 
-        for pathology_code, (
-            predicted_label,
-            probability,
-        ) in multi_label_predictions.items():
+        for pathology_code, pred in multi_label_predictions.items():
+            raw_predicted_label = pred.get("predicted_label", False)
+            predicted_label = (
+                bool(raw_predicted_label) if raw_predicted_label is not None else False
+            )
+
+            raw_probability = pred.get("probability", 0.0)
+            if isinstance(raw_probability, (int, float)):
+                probability = float(raw_probability)
+            elif isinstance(raw_probability, str):
+                try:
+                    probability = float(raw_probability)
+                except ValueError:
+                    probability = 0.0
+            else:
+                probability = 0.0
             pathology = self.session.exec(
                 select(Pathology).where(Pathology.code == pathology_code)
             ).first()
@@ -204,8 +218,12 @@ class PredictionService:
                     )
                 ).first()
 
+                print(
+                    f"[DEBUG] pathology_code={pathology_code}, probability={probability} ({type(probability)}), predicted_label={predicted_label} ({type(predicted_label)})"
+                )
                 if existing_pred and existing_pred.id is not None:
                     # Update existing prediction
+                    print(f"[DEBUG] Updating existing_pred.id={existing_pred.id}")
                     existing_pred.probability = probability
                     existing_pred.predicted_label = predicted_label
                     saved_predictions.append(existing_pred.id)
@@ -213,6 +231,9 @@ class PredictionService:
                     # Create new prediction
                     if model_version.id is None:
                         continue
+                    print(
+                        f"[DEBUG] Creating new ImagePredictedLabel for pathology_id={pathology.id}"
+                    )
                     pred_label = ImagePredictedLabel(
                         image_id=image_id,
                         model_version_id=model_version.id,

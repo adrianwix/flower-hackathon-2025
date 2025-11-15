@@ -44,6 +44,7 @@ PUT    /api/images/:id/labels           # Update doctor labels for an image
 
 ## Implementation Notes
 
+- **Authentication**: Use fake/mock authentication (hardcoded user, no login flow). This is a hackathon - skip OAuth, JWT, sessions, etc.
 - **Upload Flow**: POST multipart/form-data (file + exam metadata) → create Exam → create Image with bytes → run ML inference → return with predictions
 - **Review Status**: Image is pending review if `reviewed_at` is NULL. Set timestamp when doctor confirms/edits labels.
 - **Doctor Labels**: Create `DoctorLabel` records + update `Image.reviewed_at` when doctor clicks confirm/edit button

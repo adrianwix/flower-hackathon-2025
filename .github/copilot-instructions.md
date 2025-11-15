@@ -1,3 +1,6 @@
+# Python Imports
+
+Always place all import statements at the very top of each Python file, before any code, functions, or classes. Do not put imports inside functions or classes unless absolutely necessary (e.g., to avoid circular imports or for performance reasons in rare cases).
 # GitHub Copilot Instructions
 
 ## Python Execution

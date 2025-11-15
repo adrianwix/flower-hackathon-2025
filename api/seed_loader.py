@@ -150,7 +150,6 @@ def load_seed_data(session: Session, seeds_dir: Path) -> dict[str, int]:
                 image_bytes=image_bytes,
                 mime_type="image/png",
                 view_position=image_data.get("view_position"),
-                ground_truth_labels=image_data.get("ground_truth_labels"),
             )
             session.add(image)
             stats["images"] += 1

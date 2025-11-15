@@ -11,9 +11,6 @@ from sqlmodel import (
     SQLModel,
     Field,  # type: ignore
     Relationship,
-    Column,
-    ARRAY,
-    Text,
 )
 
 
@@ -118,12 +115,6 @@ class Image(SQLModel, table=True):
 
     # Optional metadata
     view_position: Optional[str] = Field(default=None)  # e.g., "PA", "AP"
-
-    # Optional ground truth labels for seeded NIH images only
-    # e.g., ['Effusion', 'Cardiomegaly'] or ['No Finding']
-    ground_truth_labels: Optional[List[str]] = Field(
-        default=None, sa_column=Column(ARRAY(Text))
-    )
 
     # Workflow - image is pending review if reviewed_at is None
     reviewed_at: Optional[datetime] = Field(default=None, nullable=True, index=True)

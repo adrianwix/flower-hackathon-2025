@@ -5,7 +5,7 @@ Here we go 👇
 You have a **single-tenant**, on-prem schema for a radiology review app that:
 
 * Manages **users (doctors)**, **patients**, and **exams**.
-* Stores X-ray **images in PostgreSQL as `bytea`**, with an optional `ground_truth_labels TEXT[]` field for NIH-seeded demo data.
+* Stores X-ray **images in PostgreSQL as `bytea`**.
 * Tracks **ML predictions** (`image_predicted_label`) per image & pathology & model version.
 * Tracks **doctor labels** (`doctor_label`) as human validation of the ML result (AI Act: human in the loop).
 * Exposes a **review workflow** via `image.review_status` so you can list “images needing doctor review”.
@@ -77,11 +77,6 @@ CREATE TABLE image (
 
     -- optional metadata (if available)
     view_position      TEXT,                -- e.g. "PA", "AP"
-
-    -- OPTIONAL ground truth labels for seeded NIH images only.
-    -- e.g. {'Effusion','Cardiomegaly'} or {'No Finding'}
-    -- For user uploads this will usually be NULL.
-    ground_truth_labels TEXT[],
 
     -- workflow
     review_status      review_status NOT NULL DEFAULT 'pending',

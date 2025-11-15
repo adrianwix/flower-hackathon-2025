@@ -7,7 +7,7 @@ Combines two models:
 """
 
 from pathlib import Path
-from typing import Any, Dict, Tuple, List
+from typing import Any, Dict, Tuple
 
 import numpy as np
 import torch
@@ -63,6 +63,8 @@ class DualXRayModel:
         """
         # Create ResNet18 architecture with single output (binary classification)
         model = models.resnet18(weights=None)
+        # Modify first conv layer for grayscale input (1 channel instead of 3)
+        model.conv1 = nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3, bias=False)
         model.fc = nn.Linear(model.fc.in_features, 1)  # Binary output
 
         # Load trained weights
@@ -71,6 +73,10 @@ class DualXRayModel:
             raise FileNotFoundError(f"Binary model not found at {full_path}")
 
         checkpoint = torch.load(full_path, map_location=self.device)
+        # Fix: Strip 'model.' prefix from checkpoint keys if present
+        if any(k.startswith("model.") for k in checkpoint.keys()):
+            checkpoint = {k.replace("model.", ""): v for k, v in checkpoint.items()}
+        # Load state dict (checkpoint was saved for a 1-channel conv1 in some cases)
         model.load_state_dict(checkpoint)
 
         return model
@@ -122,8 +128,8 @@ class DualXRayModel:
         img_resized = img.resize((224, 224))
         img_array = np.array(img_resized) / 255.0
 
-        # Convert to 3-channel (ResNet expects 3 channels)
-        img_array = np.stack([img_array] * 3, axis=0)
+        # Keep as single-channel (ResNet modified to accept 1 channel)
+        img_array = np.expand_dims(img_array, axis=0)
 
         # Convert to tensor and add batch dimension
         img_tensor = torch.from_numpy(img_array).unsqueeze(0).float()  # type: ignore
@@ -131,46 +137,49 @@ class DualXRayModel:
         return img_tensor.to(self.device)
 
     def predict_multilabel(
-        self, image_path: Path, threshold: float = 0.5
-    ) -> List[Tuple[str, float, bool]]:
+        self, img_tensor: torch.Tensor, threshold: float = 0.5
+    ) -> Dict[str, Dict[str, object]]:
         """
         Predict multiple pathology labels using torchxrayvision.
 
         Args:
-            image_path: Path to the X-ray image
+            img_tensor: Preprocessed image tensor (1, 1, 224, 224)
             threshold: Probability threshold for positive predictions
 
         Returns:
-            List of tuples (pathology_code, probability, predicted_label)
+            Dictionary of {pathology_code: (predicted_label, probability)}
         """
-        img_tensor = self._preprocess_image_for_multilabel(image_path)
+        img_tensor = img_tensor.to(self.device)
 
         with torch.no_grad():
             outputs = self.multilabel_model(img_tensor)
             probabilities = torch.sigmoid(outputs).cpu().numpy()[0]
 
-        results: List[Tuple[str, float, bool]] = []
+        results: Dict[str, Dict[str, object]] = {}
         for pathology, probability in zip(self.multilabel_pathologies, probabilities):
             predicted_label = probability > threshold
-            results.append((pathology, float(probability), bool(predicted_label)))
+            results[pathology] = {
+                "predicted_label": bool(predicted_label),
+                "probability": float(probability),
+            }
 
         return results
 
     def predict_binary(
-        self, image_path: Path, threshold: float = 0.5
+        self, img_tensor: torch.Tensor, threshold: float = 0.5
     ) -> Tuple[str, float, bool]:
         """
         Predict binary Finding/No Finding using custom ResNet18.
 
         Args:
-            image_path: Path to the X-ray image
+            img_tensor: Preprocessed image tensor (1, 1, 224, 224)
             threshold: Probability threshold for positive prediction
 
         Returns:
             Tuple of (label, probability, predicted_label)
             where label is "Finding" or "No Finding"
         """
-        img_tensor = self._preprocess_image_for_binary(image_path)
+        img_tensor = img_tensor.to(self.device)
 
         with torch.no_grad():
             output = self.binary_model(img_tensor)
@@ -181,12 +190,18 @@ class DualXRayModel:
 
         return label, float(probability), bool(has_finding)
 
-    def predict_all(self, image_path: Path, threshold: float = 0.5) -> Dict[str, Any]:
+    def predict_all(
+        self,
+        multilabel_tensor: torch.Tensor,
+        binary_tensor: torch.Tensor,
+        threshold: float = 0.5,
+    ) -> Dict[str, Any]:
         """
         Run both binary and multi-label predictions.
 
         Args:
-            image_path: Path to the X-ray image
+            multilabel_tensor: Preprocessed tensor for multilabel model (1, 1, 224, 224)
+            binary_tensor: Preprocessed tensor for binary model (1, 1, 224, 224)
             threshold: Probability threshold for positive predictions
 
         Returns:
@@ -194,11 +209,11 @@ class DualXRayModel:
         """
         # Binary prediction (Finding vs No Finding)
         binary_label, binary_prob, has_finding = self.predict_binary(
-            image_path, threshold
+            binary_tensor, threshold
         )
 
         # Multi-label predictions
-        multilabel_predictions = self.predict_multilabel(image_path, threshold)
+        multilabel_predictions = self.predict_multilabel(multilabel_tensor, threshold)
 
         return {
             "binary_prediction": {
@@ -206,14 +221,7 @@ class DualXRayModel:
                 "probability": binary_prob,
                 "has_finding": has_finding,
             },
-            "multilabel_predictions": [
-                {
-                    "pathology": pathology,
-                    "probability": prob,
-                    "predicted_label": pred,
-                }
-                for pathology, prob, pred in multilabel_predictions
-            ],
+            "multi_label_predictions": multilabel_predictions,
             "threshold": threshold,
         }
 
