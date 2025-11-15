@@ -1,42 +1,49 @@
-# Flower Hackathon - Radiology Review System
+# Medical AI Assistant Prototype with Personalized FL 
 
-A comprehensive application for managing patient health records with AI-assisted X-ray pathology detection, built for a hackathon using Federated Learning with Flower.
+
+📊 [View Project Presentation](./docs/Presentation1.pdf)
+
+
+A prototype proposing a federated learning system that combines Personalized FL for privacy-preserving training across hospitals with a Mixture of Experts approach at inference, applied to AI-assisted X-ray pathology detection.
+
+
+## Problem: 
+
+* Medical data is highly sensitive and legally protected, which makes large-scale centralized model training challenging
+
+* At the same time it is strongly heterogeneous and non-IID: different patient groups, health conditions, devices, workflows, and labeling—so advanced approaches are necessary. 
+
+## Solutions
+
+We explore a real-life solution through two key objectives:
+
+### Objective 1: Personalized Federated Learning for Non-IID Data
+
+Use **Personalized FL** to handle heterogeneous medical data across hospitals. Each site maintains personalized model adaptations while benefiting from collaborative learning using algorithms like FedProx, preserving privacy and accounting for local data distributions.
+
+### Objective 2: Mixture of Experts at Inference
+
+Employ a **Mixture of Experts (MoE)** approach that intelligently combines predictions from multiple specialized models based on patient characteristics, routing each X-ray to the most appropriate experts for improved diagnostic accuracy.
+
+Inspired by ["Personalized Federated Learning via Mixture of Experts with Abductive Learning"](https://www.ijcai.org/proceedings/2025/0610.pdf) (IJCAI 2025).
+
+📊 [View Project Presentation](./docs/Presentation1.pdf)
+
 
 ## 🏥 Overview
 
-This system provides:
-- **Patient & X-ray Management**: Full data model for patients, exams, and X-ray images
-- **AI-Assisted Diagnosis**: ML model predictions for 14 pathology types
+This prototype system demonstrates:
+- **AI-Assisted Diagnosis**: Multi-label classification for 14 pathology types from chest X-rays
 - **Doctor Review Workflow**: Human-in-the-loop validation (AI Act compliant)
-- **Federated Learning Ready**: Integration with Flower framework for privacy-preserving ML
-- **RESTful API**: FastAPI backend with SQLModel/PostgreSQL
-- **Modern UI**: React frontend (in development)
+- **Full Stack Implementation**: FastAPI backend with SQLModel/PostgreSQL, React frontend, complete patient/exam/image data model
+- **Federated Learning**: Implemented by exploring non-IID targeting strategies (FedProx, FedDyn), and comparing use of different models 
+
+- **Personalized Federated Learning**: 🚧 In progress 
+- **Mixture of Experts Inference**: 🚧 Proposed approach for future implementation (not implemented due to time limitations) 
+
 
 Based on the NIH Chest X-ray dataset: https://www.kaggle.com/datasets/nih-chest-xrays/data/data
 
-## 📁 Project Structure
-
-```
-flower-hackathon/
-├── api/                    # FastAPI backend
-│   ├── main.py            # API endpoints
-│   ├── models.py          # SQLModel database models
-│   ├── database.py        # Database configuration
-│   ├── model_service.py   # ML prediction service (mock)
-│   ├── init_db.py         # Database initialization script
-│   ├── example_usage.py   # Usage examples
-│   └── pyproject.toml     # Python dependencies
-├── coldstart/             # Federated Learning implementation
-│   ├── evaluate.py
-│   └── cold_start_hackathon/
-│       ├── client_app.py
-│       ├── server_app.py
-│       └── task.py
-├── ui/                    # React frontend
-│   └── src/
-├── DATA_MODEL.md          # Complete database schema documentation
-└── README.md             # This file
-```
 
 ## 🚀 Quick Start
 
@@ -86,245 +93,3 @@ npm install
 npm run dev
 ```
 
-## 📊 Data Model
-
-The system implements a comprehensive medical imaging data model with:
-
-### Core Entities
-- **User**: Doctors and administrators
-- **Patient**: Patient demographics and IDs
-- **Exam**: Imaging sessions/visits
-- **Image**: X-ray images (stored as bytea in PostgreSQL)
-
-### ML & Review Workflow
-- **Pathology**: Master table of disease codes (14 NIH classes + "No Finding")
-- **ModelVersion**: ML model versions (FL rounds/snapshots)
-- **ImagePredictedLabel**: AI predictions with probabilities
-- **DoctorLabel**: Human validation labels (AI Act: human in the loop)
-
-### Review Status Workflow
-```
-pending → in_review → completed
-```
-
-See [DATA_MODEL.md](DATA_MODEL.md) for complete SQL schema.
-
-## 🤖 Model Prediction
-
-### Current Implementation (Mock)
-
-The system includes a **mock prediction service** that simulates ML predictions:
-
-```python
-from model_service import get_model
-
-model = get_model()
-predictions = model.predict_all(image_bytes, threshold=0.5)
-```
-
-### Prediction Types
-
-1. **Binary Classification**: Finding vs No Finding
-   - Single probability output
-   - Threshold-based decision
-
-2. **Multi-Label Classification**: 14 Pathology Types
-   - Atelectasis, Cardiomegaly, Effusion, Infiltration
-   - Mass, Nodule, Pneumonia, Pneumothorax
-   - Consolidation, Edema, Emphysema, Fibrosis
-   - Pleural Thickening, Hernia
-
-### Future: Real PyTorch Model
-
-To replace the mock with a trained model:
-
-1. **Train on NIH Dataset**:
-```python
-import torchvision.models as models
-
-model = models.resnet50(pretrained=True)
-model.fc = nn.Linear(model.fc.in_features, 14)  # 14 pathology classes
-# Train on NIH Chest X-ray dataset
-```
-
-2. **Update `model_service.py`**:
-   - Implement `_load_model()` to load trained weights
-   - Update `preprocess_image()` with proper transforms
-   - Replace mock predictions with actual inference
-
-3. **Integrate with Flower**:
-   - Use FL to train across multiple sites
-   - Preserve patient privacy
-   - Track model versions per FL round
-
-## 🔌 API Endpoints
-
-### Predictions
-```bash
-# Predict on uploaded image (no storage)
-POST /predict
-  - file: image file
-  - threshold: float (default: 0.5)
-
-# Predict on stored image (save to DB)
-POST /images/{image_id}/predict
-  - threshold: float
-  - model_version_name: string
-
-# List pathologies
-GET /pathologies
-
-# List model versions
-GET /model-versions
-```
-
-### Example Usage
-
-```bash
-# Upload and predict
-curl -X POST "http://localhost:8000/predict?threshold=0.5" \
-  -F "file=@xray.png"
-
-# Predict stored image
-curl -X POST "http://localhost:8000/images/1/predict?threshold=0.5"
-```
-
-## 🧪 Example Code
-
-Run the example script to see the system in action:
-
-```bash
-cd api
-python example_usage.py
-```
-
-This demonstrates:
-- Creating users, patients, exams, and images
-- Running predictions
-- Querying stored predictions
-- Database operations
-
-## 🌸 Federated Learning with Flower
-
-The `coldstart/` directory contains Flower integration for federated learning:
-
-- **Client App**: Local model training on hospital data
-- **Server App**: Aggregates model updates from clients
-- **Task**: Defines the ML task and data processing
-
-This enables:
-- Privacy-preserving training across multiple hospitals
-- No central data storage required
-- Model improvement through collaborative learning
-
-## 🗄️ Database Schema
-
-Key relationships:
-```
-User (Doctor)
-  └── creates → Exam
-                  └── contains → Image
-                                   ├── predicted by → ImagePredictedLabel
-                                   │                    └── references → Pathology
-                                   │                    └── references → ModelVersion
-                                   └── reviewed by → DoctorLabel
-                                                      └── references → Pathology
-                                                      └── labeled by → User
-```
-
-## 🛠️ Development
-
-### Adding New Features
-
-1. **New Database Model**: Update `models.py` with SQLModel classes
-2. **New Endpoint**: Add to `main.py` with proper type hints
-3. **New Prediction Type**: Extend `model_service.py`
-
-### Database Migrations
-
-For schema changes:
-```bash
-# Drop and recreate (development only)
-python init_db.py
-
-# Or use Alembic for production migrations
-pip install alembic
-alembic init alembic
-alembic revision --autogenerate -m "description"
-alembic upgrade head
-```
-
-### Testing
-
-```bash
-# Install test dependencies
-pip install pytest pytest-asyncio httpx
-
-# Run tests
-pytest
-```
-
-## 📦 Dependencies
-
-### Backend (Python)
-- **FastAPI**: Modern web framework
-- **SQLModel**: SQL databases with Pydantic models
-- **PostgreSQL**: Relational database
-- **PyTorch**: Deep learning framework (for future model)
-- **Pillow**: Image processing
-- **Flower**: Federated learning framework
-
-### Frontend (TypeScript)
-- **React**: UI framework
-- **Vite**: Build tool
-- **TypeScript**: Type safety
-
-## 🚢 Deployment
-
-### Docker
-```bash
-# Build
-docker build -t radiology-api ./api
-
-# Run
-docker run -p 8000:8000 \
-  -e DATABASE_URL="postgresql://..." \
-  radiology-api
-```
-
-### Render.com
-The project includes `render.yaml` for easy deployment to Render.
-
-## 📝 License
-
-MIT License - see LICENSE file for details.
-
-## 🤝 Contributing
-
-This is a hackathon project. Contributions welcome!
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📚 Resources
-
-- **NIH Chest X-ray Dataset**: https://www.kaggle.com/datasets/nih-chest-xrays/data/data
-- **Flower Framework**: https://flower.dev/
-- **FastAPI**: https://fastapi.tiangolo.com/
-- **SQLModel**: https://sqlmodel.tiangolo.com/
-
-## 🏆 Hackathon Goals
-
-- ✅ Implement complete data model with SQLModel
-- ✅ Create mock prediction service (PyTorch-ready)
-- ✅ Build RESTful API with FastAPI
-- ⏳ Integrate real PyTorch model
-- ⏳ Implement Flower federated learning
-- ⏳ Build React UI for doctor review workflow
-- ⏳ Deploy to cloud platform
-
----
-
-Built with ❤️ for the Flower Hackathon 2025
