@@ -108,10 +108,12 @@ const PatientDetailPanel: React.FC<PatientDetailPanelProps> = ({ patientId, onBa
     try {
       const labels: { [key: string]: boolean } = {};
 
-      // Convert ML predictions to doctor labels
-      Object.entries(mlPredictions.multi_label_predictions).forEach(([pathology, pred]) => {
+      // Convert ML predictions to doctor labels - only take the first label
+      const entries = Object.entries(mlPredictions.multi_label_predictions);
+      if (entries.length > 0) {
+        const [pathology, pred] = entries[0];
         labels[pathology] = pred.predicted_label;
-      });
+      }
 
       await axios.put(`${API_URL}/patients/images/${imageId}/labels`, {
         labels,

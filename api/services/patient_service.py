@@ -339,6 +339,7 @@ class PatientService:
 
         # Mark image as reviewed
         image.reviewed_at = datetime.now(timezone.utc)
+        self.session.add(image)
 
         self.session.commit()
 
@@ -424,19 +425,32 @@ class PatientService:
         Returns:
             ModelVersion instance
         """
+        # Try to get existing model version first
         model_version = self.session.exec(
             select(ModelVersion).where(ModelVersion.name == model_version_name)
         ).first()
 
-        if not model_version:
+        if model_version:
+            return model_version
+
+        # Create new model version
+        try:
             model_version = ModelVersion(
                 name=model_version_name,
                 description="Dual model: Binary classifier + Multi-label classifier",
             )
             self.session.add(model_version)
             self.session.flush()
-
-        return model_version
+            return model_version
+        except Exception:
+            # If concurrent insert happened, rollback and query again
+            self.session.rollback()
+            model_version = self.session.exec(
+                select(ModelVersion).where(ModelVersion.name == model_version_name)
+            ).first()
+            if not model_version:
+                raise
+            return model_version
 
     def _get_or_create_default_doctor(self) -> User:
         """
@@ -445,11 +459,16 @@ class PatientService:
         Returns:
             User instance
         """
+        # Try to get existing doctor first
         doctor = self.session.exec(
             select(User).where(User.email == "doctor@example.com")
         ).first()
 
-        if not doctor:
+        if doctor:
+            return doctor
+
+        # Create new doctor
+        try:
             doctor = User(
                 email="doctor@example.com",
                 full_name="Dr. Demo",
@@ -458,8 +477,16 @@ class PatientService:
             )
             self.session.add(doctor)
             self.session.flush()
-
-        return doctor
+            return doctor
+        except Exception:
+            # If concurrent insert happened, rollback and query again
+            self.session.rollback()
+            doctor = self.session.exec(
+                select(User).where(User.email == "doctor@example.com")
+            ).first()
+            if not doctor:
+                raise
+            return doctor
 
     def _save_predictions(
         self,

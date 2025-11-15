@@ -1,3 +1,10 @@
+databases:
+  - name: flower-hackathon-db
+    plan: free
+    databaseName: flower_hackathon
+    user: flower_user
+    region: frankfurt
+
 services:
   # FastAPI Backend
   - type: web
@@ -11,6 +18,10 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.12.0
+      - key: DATABASE_URL
+        fromDatabase:
+          name: flower-hackathon-db
+          property: connectionString
 
   # React Frontend (Static Site)
   - type: web
