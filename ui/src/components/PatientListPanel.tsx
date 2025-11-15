@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:8000';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 interface Patient {
   id: number;
@@ -53,23 +53,23 @@ const PatientListPanel: React.FC<PatientListPanelProps> = ({ onSelectPatient }) 
   return (
     <div style={{ fontFamily: 'sans-serif', maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
       {/* Header */}
-      <div style={{ 
-        background: 'linear-gradient(135deg, #005CA9 0%, #0077CC 100%)', 
-        color: 'white', 
-        padding: '20px', 
+      <div style={{
+        background: 'linear-gradient(135deg, #005CA9 0%, #0077CC 100%)',
+        color: 'white',
+        padding: '20px',
         borderRadius: '8px',
         marginBottom: '20px'
       }}>
         <h1 style={{ margin: '0 0 10px 0', fontSize: '28px' }}>📋 Patient Review Dashboard</h1>
-        <p style={{ margin: 0, opacity: 0.9 }}>Review and manage patient X-ray examinations</p>
+        <p style={{ margin: 0 }}>Review and manage patient X-ray examinations</p>
       </div>
 
       {/* Error Display */}
       {error && (
-        <div style={{ 
-          margin: '20px 0', 
-          padding: '15px', 
-          background: '#f8d7da', 
+        <div style={{
+          margin: '20px 0',
+          padding: '15px',
+          background: '#f8d7da',
           color: '#721c24',
           borderRadius: '6px',
           border: '1px solid #f5c6cb'
@@ -88,9 +88,9 @@ const PatientListPanel: React.FC<PatientListPanelProps> = ({ onSelectPatient }) 
 
       {/* Patient List */}
       {!isLoading && patients.length === 0 && !error && (
-        <div style={{ 
-          textAlign: 'center', 
-          padding: '60px', 
+        <div style={{
+          textAlign: 'center',
+          padding: '60px',
           background: '#f8f9fa',
           borderRadius: '8px',
           color: '#666'
@@ -105,7 +105,7 @@ const PatientListPanel: React.FC<PatientListPanelProps> = ({ onSelectPatient }) 
         <div style={{ background: 'white', borderRadius: '8px', overflow: 'hidden', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
           <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
-              <tr style={{ background: '#e6f2ff', borderBottom: '2px solid #005CA9' }}>
+              <tr style={{ background: '#005CA9', borderBottom: '2px solid #004a8a', color: 'white' }}>
                 <th style={{ padding: '15px', textAlign: 'left', fontWeight: '600' }}>Patient</th>
                 <th style={{ padding: '15px', textAlign: 'left', fontWeight: '600' }}>Age</th>
                 <th style={{ padding: '15px', textAlign: 'left', fontWeight: '600' }}>Sex</th>
@@ -116,9 +116,9 @@ const PatientListPanel: React.FC<PatientListPanelProps> = ({ onSelectPatient }) 
             </thead>
             <tbody>
               {patients.map((patient) => (
-                <tr 
-                  key={patient.id} 
-                  style={{ 
+                <tr
+                  key={patient.id}
+                  style={{
                     borderBottom: '1px solid #dee2e6',
                     transition: 'background 0.2s',
                     cursor: 'pointer'
@@ -128,7 +128,9 @@ const PatientListPanel: React.FC<PatientListPanelProps> = ({ onSelectPatient }) 
                 >
                   <td style={{ padding: '15px' }}>
                     <div style={{ fontWeight: '500', color: '#005CA9' }}>
-                      {patient.first_name} {patient.last_name}
+                      {patient.first_name && patient.last_name
+                        ? `${patient.first_name} ${patient.last_name}`
+                        : `Patient ${patient.id}`}
                     </div>
                     <div style={{ fontSize: '12px', color: '#666', marginTop: '2px' }}>
                       ID: {patient.id}
@@ -142,7 +144,7 @@ const PatientListPanel: React.FC<PatientListPanelProps> = ({ onSelectPatient }) 
                   </td>
                   <td style={{ padding: '15px' }}>
                     {patient.needs_review ? (
-                      <span style={{ 
+                      <span style={{
                         display: 'inline-block',
                         padding: '4px 12px',
                         background: '#fff3cd',
@@ -154,7 +156,7 @@ const PatientListPanel: React.FC<PatientListPanelProps> = ({ onSelectPatient }) 
                         ⚠️ {patient.pending_reviews} Pending
                       </span>
                     ) : (
-                      <span style={{ 
+                      <span style={{
                         display: 'inline-block',
                         padding: '4px 12px',
                         background: '#d4edda',
@@ -199,15 +201,15 @@ const PatientListPanel: React.FC<PatientListPanelProps> = ({ onSelectPatient }) 
 
       {/* Summary Stats */}
       {!isLoading && patients.length > 0 && (
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
-          gap: '15px', 
-          marginTop: '20px' 
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+          gap: '15px',
+          marginTop: '20px'
         }}>
-          <div style={{ 
-            background: 'white', 
-            padding: '20px', 
+          <div style={{
+            background: 'white',
+            padding: '20px',
             borderRadius: '8px',
             boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
             textAlign: 'center'
@@ -219,9 +221,9 @@ const PatientListPanel: React.FC<PatientListPanelProps> = ({ onSelectPatient }) 
               Total Patients
             </div>
           </div>
-          <div style={{ 
-            background: 'white', 
-            padding: '20px', 
+          <div style={{
+            background: 'white',
+            padding: '20px',
             borderRadius: '8px',
             boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
             textAlign: 'center'
@@ -233,9 +235,9 @@ const PatientListPanel: React.FC<PatientListPanelProps> = ({ onSelectPatient }) 
               Need Review
             </div>
           </div>
-          <div style={{ 
-            background: 'white', 
-            padding: '20px', 
+          <div style={{
+            background: 'white',
+            padding: '20px',
             borderRadius: '8px',
             boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
             textAlign: 'center'

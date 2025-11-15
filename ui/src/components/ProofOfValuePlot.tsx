@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell, Legend } from 'recharts';
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:8001';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 interface AccuracyResult {
   name: string;
@@ -60,10 +60,10 @@ const ProofOfValuePlot: React.FC = () => {
   return (
     <div>
       {metadata && (
-        <div style={{ 
-          marginBottom: '15px', 
-          padding: '12px', 
-          background: '#e6f2ff', 
+        <div style={{
+          marginBottom: '15px',
+          padding: '12px',
+          background: '#e6f2ff',
           borderRadius: '6px',
           fontSize: '12px',
           color: '#005CA9'
@@ -73,22 +73,22 @@ const ProofOfValuePlot: React.FC = () => {
           <strong>Methodology:</strong> {metadata.methodology}
         </div>
       )}
-      
+
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data}>
-          <XAxis 
-            dataKey="name" 
+          <XAxis
+            dataKey="name"
             tick={{ fontSize: 12 }}
             interval={0}
             angle={-15}
             textAnchor="end"
             height={80}
           />
-          <YAxis 
+          <YAxis
             label={{ value: 'Accuracy (%)', angle: -90, position: 'insideLeft' }}
             domain={[0, 100]}
           />
-          <Tooltip 
+          <Tooltip
             content={({ active, payload }) => {
               if (active && payload && payload.length) {
                 const data = payload[0].payload as AccuracyResult;

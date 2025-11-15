@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useDropzone } from 'react-dropzone';
 import ProofOfValuePlot from './ProofOfValuePlot';
 
-const API_URL = 'http://127.0.0.1:8001';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 interface ModelResult {
   name: string;
@@ -28,7 +28,7 @@ const ClinicianPanel: React.FC = () => {
 
   const handleFeedbackSubmit = async (feedbackType: string) => {
     if (!result) return;
-    
+
     try {
       await axios.post(`${API_URL}/api/submit-feedback`, {
         image_filename: result.image_filename || result.case_id,
@@ -44,27 +44,27 @@ const ClinicianPanel: React.FC = () => {
 
   const handleFileAnalysis = useCallback(async (acceptedFiles: File[]) => {
     if (acceptedFiles.length === 0) return;
-    
+
     const file = acceptedFiles[0];
     setIsLoading(true);
     setResult(null);
     setError(null);
     setExpandedModel(null);
     setFeedback(null);
-    
+
     const formData = new FormData();
     formData.append('file', file);
-    
+
     try {
       // Simulate analysis time for animation
       await new Promise(resolve => setTimeout(resolve, 2000));
-      
+
       const response = await axios.post(`${API_URL}/api/analyze-image`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
       });
-      
+
       // Add filename to result for feedback tracking
       setResult({ ...response.data, image_filename: file.name });
     } catch (err) {
@@ -88,17 +88,17 @@ const ClinicianPanel: React.FC = () => {
   return (
     <div style={{ fontFamily: 'sans-serif', maxWidth: '1000px', margin: '0 auto', padding: '0 clamp(10px, 2vw, 0px)' }}>
       {/* Patient Context Header */}
-      <div style={{ 
-        background: 'linear-gradient(135deg, #005CA9 0%, #0077CC 100%)', 
-        color: 'white', 
-        padding: 'clamp(15px, 3vw, 20px)', 
+      <div style={{
+        background: 'linear-gradient(135deg, #005CA9 0%, #0077CC 100%)',
+        color: 'white',
+        padding: 'clamp(15px, 3vw, 20px)',
         borderRadius: '8px 8px 0 0',
         marginBottom: '0'
       }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px' }}>
           <div>
             <h2 style={{ margin: '0 0 10px 0', fontSize: 'clamp(18px, 3vw, 24px)' }}>📋 Patient Case Review</h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '10px', fontSize: 'clamp(12px, 2vw, 14px)', opacity: 0.95 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: '10px', fontSize: 'clamp(12px, 2vw, 14px)' }}>
               <div><strong>Patient ID:</strong> 94B-31</div>
               <div><strong>Accession #:</strong> 77601-A</div>
               <div><strong>Modality:</strong> X-Ray, Chest (AP)</div>
@@ -109,17 +109,17 @@ const ClinicianPanel: React.FC = () => {
       </div>
 
       {/* Simulation Controls */}
-      <div style={{ 
-        background: '#f8f9fa', 
-        padding: 'clamp(15px, 3vw, 20px)', 
+      <div style={{
+        background: '#f8f9fa',
+        padding: 'clamp(15px, 3vw, 20px)',
         borderLeft: '1px solid #dee2e6',
         borderRight: '1px solid #dee2e6',
         borderBottom: '1px solid #dee2e6'
       }}>
         <h3 style={{ margin: '0 0 15px 0', fontSize: 'clamp(16px, 2.5vw, 18px)', color: '#005CA9' }}>📤 Upload X-Ray for FSO Analysis</h3>
-        
-        <div 
-          {...getRootProps()} 
+
+        <div
+          {...getRootProps()}
           style={{
             border: isDragActive ? '3px dashed #28a745' : '3px dashed #005CA9',
             borderRadius: '12px',
@@ -153,9 +153,9 @@ const ClinicianPanel: React.FC = () => {
 
       {/* Loading Animation */}
       {isLoading && (
-        <div style={{ 
-          margin: 'clamp(20px, 4vw, 30px) 0', 
-          padding: 'clamp(25px, 5vw, 40px)', 
+        <div style={{
+          margin: 'clamp(20px, 4vw, 30px) 0',
+          padding: 'clamp(25px, 5vw, 40px)',
           background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
           borderRadius: '8px',
           border: '2px solid #005CA9'
@@ -163,13 +163,13 @@ const ClinicianPanel: React.FC = () => {
           <h3 style={{ textAlign: 'center', color: '#005CA9', marginBottom: 'clamp(20px, 4vw, 30px)', fontSize: 'clamp(16px, 2.5vw, 18px)' }}>
             ⚡ Running Federated Specialist Orchestration (FSO)
           </h3>
-          
+
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: 'clamp(10px, 2vw, 20px)', flexWrap: 'wrap' }}>
-            <div style={{ 
+            <div style={{
               flex: '1 1 200px',
               minWidth: '150px',
-              background: 'white', 
-              padding: 'clamp(15px, 3vw, 20px)', 
+              background: 'white',
+              padding: 'clamp(15px, 3vw, 20px)',
               borderRadius: '8px',
               textAlign: 'center',
               boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
@@ -181,9 +181,9 @@ const ClinicianPanel: React.FC = () => {
               <div style={{ fontSize: '12px', color: '#666', marginTop: '5px' }}>
                 Privacy-Preserving Extraction
               </div>
-              <div style={{ 
-                fontSize: '10px', 
-                color: '#28a745', 
+              <div style={{
+                fontSize: '10px',
+                color: '#28a745',
                 marginTop: '8px',
                 fontWeight: '600',
                 background: '#d4edda',
@@ -197,11 +197,11 @@ const ClinicianPanel: React.FC = () => {
 
             <div style={{ fontSize: 'clamp(28px, 5vw, 40px)', animation: 'pulse 1s infinite' }}>→</div>
 
-            <div style={{ 
+            <div style={{
               flex: '2 1 300px',
               minWidth: '250px',
-              background: 'white', 
-              padding: 'clamp(15px, 3vw, 20px)', 
+              background: 'white',
+              padding: 'clamp(15px, 3vw, 20px)',
               borderRadius: '8px',
               boxShadow: '0 4px 6px rgba(0,0,0,0.1)'
             }}>
@@ -209,11 +209,11 @@ const ClinicianPanel: React.FC = () => {
                 <strong style={{ fontSize: '16px', color: '#005CA9' }}>🌐 Mycelium Node</strong>
                 <div style={{ fontSize: '11px', color: '#666' }}>100% On-Premise Processing</div>
               </div>
-              
+
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(100px, 1fr))', gap: '10px' }}>
-                <div style={{ 
-                  padding: '15px', 
-                  background: '#e6f2ff', 
+                <div style={{
+                  padding: '15px',
+                  background: '#e6f2ff',
                   borderRadius: '6px',
                   textAlign: 'center',
                   animation: 'flash 1.5s infinite',
@@ -223,9 +223,9 @@ const ClinicianPanel: React.FC = () => {
                   <div style={{ fontSize: '11px', fontWeight: '600' }}>Local Model</div>
                   <div style={{ fontSize: '10px', color: '#666' }}>Student A</div>
                 </div>
-                <div style={{ 
-                  padding: '15px', 
-                  background: '#e6f2ff', 
+                <div style={{
+                  padding: '15px',
+                  background: '#e6f2ff',
                   borderRadius: '6px',
                   textAlign: 'center',
                   animation: 'flash 1.5s infinite',
@@ -235,9 +235,9 @@ const ClinicianPanel: React.FC = () => {
                   <div style={{ fontSize: '11px', fontWeight: '600' }}>Global Student</div>
                   <div style={{ fontSize: '10px', color: '#666' }}>Student B</div>
                 </div>
-                <div style={{ 
-                  padding: '15px', 
-                  background: '#fff3cd', 
+                <div style={{
+                  padding: '15px',
+                  background: '#fff3cd',
                   borderRadius: '6px',
                   textAlign: 'center',
                   animation: 'flash 1.5s infinite',
@@ -251,9 +251,9 @@ const ClinicianPanel: React.FC = () => {
             </div>
           </div>
 
-          <div style={{ 
-            textAlign: 'center', 
-            marginTop: '30px', 
+          <div style={{
+            textAlign: 'center',
+            marginTop: '30px',
             fontSize: '14px',
             color: '#005CA9',
             fontWeight: '600'
@@ -278,9 +278,9 @@ const ClinicianPanel: React.FC = () => {
 
       {/* Idle State */}
       {!isLoading && !result && !error && (
-        <div style={{ 
-          margin: 'clamp(20px, 4vw, 30px) 0', 
-          padding: 'clamp(25px, 5vw, 40px)', 
+        <div style={{
+          margin: 'clamp(20px, 4vw, 30px) 0',
+          padding: 'clamp(25px, 5vw, 40px)',
           background: '#f8f9fa',
           borderRadius: '8px',
           textAlign: 'center',
@@ -296,10 +296,10 @@ const ClinicianPanel: React.FC = () => {
 
       {/* Error Display */}
       {error && (
-        <div style={{ 
-          margin: '20px 0', 
-          padding: '15px', 
-          background: '#f8d7da', 
+        <div style={{
+          margin: '20px 0',
+          padding: '15px',
+          background: '#f8d7da',
           color: '#721c24',
           borderRadius: '6px',
           border: '1px solid #f5c6cb'
@@ -310,14 +310,14 @@ const ClinicianPanel: React.FC = () => {
 
       {/* FSO Consensus Panel */}
       {result && (
-        <div style={{ 
+        <div style={{
           margin: 'clamp(20px, 4vw, 30px) 0',
           border: result.status === 'Dissent' ? '3px solid #dc3545' : '3px solid #28a745',
           borderRadius: '8px',
           overflow: 'hidden',
           boxShadow: '0 6px 12px rgba(0,0,0,0.15)'
         }}>
-          <div style={{ 
+          <div style={{
             background: result.status === 'Dissent' ? '#dc3545' : '#28a745',
             color: 'white',
             padding: 'clamp(15px, 3vw, 20px)',
@@ -332,8 +332,8 @@ const ClinicianPanel: React.FC = () => {
           </div>
 
           {/* Clinical Recommendation */}
-          <div style={{ 
-            padding: 'clamp(15px, 3vw, 20px)', 
+          <div style={{
+            padding: 'clamp(15px, 3vw, 20px)',
             background: result.status === 'Dissent' ? '#fff3cd' : '#d4edda',
             borderBottom: '1px solid #dee2e6'
           }}>
@@ -359,82 +359,82 @@ const ClinicianPanel: React.FC = () => {
                     <th style={{ padding: 'clamp(10px, 2vw, 12px)', textAlign: 'left', fontSize: 'clamp(12px, 2vw, 14px)' }}>Diagnosis</th>
                     <th style={{ padding: 'clamp(10px, 2vw, 12px)', textAlign: 'left', fontSize: 'clamp(12px, 2vw, 14px)' }}>Confidence</th>
                     <th style={{ padding: 'clamp(10px, 2vw, 12px)', textAlign: 'center', fontSize: 'clamp(12px, 2vw, 14px)' }}>Details</th>
-                </tr>
-              </thead>
-              <tbody>
-                {result.models.map((model, index) => {
-                  const isSpecialistFinding = result.status === 'Dissent' && model.confidence > 70;
-                  const isExpanded = expandedModel === index;
-                  
-                  return (
-                    <React.Fragment key={index}>
-                      <tr 
-                        style={{ 
-                          borderBottom: '1px solid #dee2e6',
-                          cursor: 'pointer',
-                          background: isExpanded ? '#f8f9fa' : 'white',
-                          transition: 'background 0.2s'
-                        }}
-                        onClick={() => setExpandedModel(isExpanded ? null : index)}
-                      >
-                        <td style={{ padding: '12px', fontSize: '14px', color: '#333' }}>
-                          {model.name}
-                        </td>
-                        <td style={{ 
-                          padding: '12px', 
-                          fontSize: '14px',
-                          fontWeight: isSpecialistFinding ? 'bold' : 'normal',
-                          color: isSpecialistFinding ? '#dc3545' : '#333'
-                        }}>
-                          {model.diagnosis}
-                        </td>
-                        <td style={{ 
-                          padding: '12px', 
-                          fontSize: '14px',
-                          fontWeight: isSpecialistFinding ? 'bold' : 'normal',
-                          color: isSpecialistFinding ? '#dc3545' : '#333'
-                        }}>
-                          {model.confidence}%
-                        </td>
-                        <td style={{ padding: '12px', textAlign: 'center' }}>
-                          <span style={{ fontSize: '18px' }}>{isExpanded ? '🔽' : '▶️'}</span>
-                        </td>
-                      </tr>
-                      
-                      {isExpanded && (
-                        <tr style={{ background: '#f8f9fa' }}>
-                          <td colSpan={4} style={{ padding: '15px' }}>
-                            <div style={{ 
-                              background: 'white', 
-                              padding: '15px', 
-                              borderRadius: '6px',
-                              border: '1px solid #dee2e6'
-                            }}>
-                              <h4 style={{ margin: '0 0 10px 0', color: '#005CA9', fontSize: '15px' }}>
-                                📋 Model Information
-                              </h4>
-                              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', fontSize: '13px', color: '#333' }}>
-                                <div><strong>Model:</strong> {model.name}</div>
-                                <div><strong>Confidence:</strong> {model.confidence}%</div>
-                                <div style={{ gridColumn: '1 / -1' }}>
-                                  <strong>Diagnosis:</strong> {model.diagnosis}
-                                </div>
-                              </div>
-                            </div>
+                  </tr>
+                </thead>
+                <tbody>
+                  {result.models.map((model, index) => {
+                    const isSpecialistFinding = result.status === 'Dissent' && model.confidence > 70;
+                    const isExpanded = expandedModel === index;
+
+                    return (
+                      <React.Fragment key={index}>
+                        <tr
+                          style={{
+                            borderBottom: '1px solid #dee2e6',
+                            cursor: 'pointer',
+                            background: isExpanded ? '#f8f9fa' : 'white',
+                            transition: 'background 0.2s'
+                          }}
+                          onClick={() => setExpandedModel(isExpanded ? null : index)}
+                        >
+                          <td style={{ padding: '12px', fontSize: '14px', color: '#333' }}>
+                            {model.name}
+                          </td>
+                          <td style={{
+                            padding: '12px',
+                            fontSize: '14px',
+                            fontWeight: isSpecialistFinding ? 'bold' : 'normal',
+                            color: isSpecialistFinding ? '#dc3545' : '#333'
+                          }}>
+                            {model.diagnosis}
+                          </td>
+                          <td style={{
+                            padding: '12px',
+                            fontSize: '14px',
+                            fontWeight: isSpecialistFinding ? 'bold' : 'normal',
+                            color: isSpecialistFinding ? '#dc3545' : '#333'
+                          }}>
+                            {model.confidence}%
+                          </td>
+                          <td style={{ padding: '12px', textAlign: 'center' }}>
+                            <span style={{ fontSize: '18px' }}>{isExpanded ? '🔽' : '▶️'}</span>
                           </td>
                         </tr>
-                      )}
-                    </React.Fragment>
-                  );
-                })}
-              </tbody>
-            </table>
+
+                        {isExpanded && (
+                          <tr style={{ background: '#f8f9fa' }}>
+                            <td colSpan={4} style={{ padding: '15px' }}>
+                              <div style={{
+                                background: 'white',
+                                padding: '15px',
+                                borderRadius: '6px',
+                                border: '1px solid #dee2e6'
+                              }}>
+                                <h4 style={{ margin: '0 0 10px 0', color: '#005CA9', fontSize: '15px' }}>
+                                  📋 Model Information
+                                </h4>
+                                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', fontSize: '13px', color: '#333' }}>
+                                  <div><strong>Model:</strong> {model.name}</div>
+                                  <div><strong>Confidence:</strong> {model.confidence}%</div>
+                                  <div style={{ gridColumn: '1 / -1' }}>
+                                    <strong>Diagnosis:</strong> {model.diagnosis}
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        )}
+                      </React.Fragment>
+                    );
+                  })}
+                </tbody>
+              </table>
             </div>
           </div>
 
           {/* Doctor Feedback */}
-          <div style={{ 
-            padding: 'clamp(12px, 2vw, 15px) clamp(15px, 3vw, 20px)', 
+          <div style={{
+            padding: 'clamp(12px, 2vw, 15px) clamp(15px, 3vw, 20px)',
             background: '#f8f9fa',
             borderTop: '1px solid #dee2e6',
             display: 'flex',
@@ -485,8 +485,8 @@ const ClinicianPanel: React.FC = () => {
           </div>
 
           {feedback && (
-            <div style={{ 
-              padding: '10px 20px', 
+            <div style={{
+              padding: '10px 20px',
               background: feedback === 'positive' ? '#d4edda' : '#f8d7da',
               color: feedback === 'positive' ? '#155724' : '#721c24',
               fontSize: '13px',
@@ -529,10 +529,10 @@ const ClinicianPanel: React.FC = () => {
           <ProofOfValuePlot />
         </div>
         <p style={{ fontSize: 'clamp(13px, 2vw, 14px)', color: '#666', lineHeight: '1.6', margin: 0 }}>
-          Mycelium's Federated Specialist Orchestration (FSO) combines local expertise with global knowledge, 
-          achieving <strong style={{ color: '#28a745' }}>91% accuracy</strong> on Hospital C's specialist data—a <strong>23% improvement</strong> over 
-          local-only models (75%) and a <strong>34% improvement</strong> over competitor "global" models (68%). 
-          Unlike traditional federated learning that suffers from the "tyranny of the average," 
+          Mycelium's Federated Specialist Orchestration (FSO) combines local expertise with global knowledge,
+          achieving <strong style={{ color: '#28a745' }}>91% accuracy</strong> on Hospital C's specialist data—a <strong>23% improvement</strong> over
+          local-only models (75%) and a <strong>34% improvement</strong> over competitor "global" models (68%).
+          Unlike traditional federated learning that suffers from the "tyranny of the average,"
           our knowledge distillation approach preserves specialist expertise while maintaining 100% data privacy.
         </p>
       </div>

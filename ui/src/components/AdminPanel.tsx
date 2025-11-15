@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:8001';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 interface StatusData {
   system_status: string;
@@ -62,10 +62,10 @@ const AdminPanel: React.FC = () => {
   // Update privacy level in backend when slider changes
   const handlePrivacyChange = async (newLevel: number) => {
     setPrivacyLevel(newLevel);
-    
+
     // Map slider (0-100) to epsilon (10.0-0.1): higher slider = higher privacy = lower epsilon
     const epsilon = 10.0 - (newLevel / 100) * 9.9;
-    
+
     try {
       await axios.post(`${API_URL}/api/update-privacy`, { epsilon });
       console.log(`Privacy updated: slider=${newLevel}, epsilon=${epsilon.toFixed(2)}`);
@@ -95,7 +95,7 @@ const AdminPanel: React.FC = () => {
   const handleSyncLibrary = async () => {
     setIsSyncing(true);
     setSyncStatus('🔄 Syncing... downloading latest Student models from network...');
-    
+
     try {
       const response = await axios.post(`${API_URL}/api/sync-library`);
       setSyncStatus(`✅ Sync Complete! New Library: ${response.data.new_library_version}`);
@@ -113,7 +113,7 @@ const AdminPanel: React.FC = () => {
   const handleToggleModel = async (modelId: string) => {
     // Optimistically update UI
     const newStatus = studentLibrary.find(m => m.id === modelId)?.status === 'Active' ? 'Inactive' : 'Active';
-    
+
     setStudentLibrary(prevLibrary =>
       prevLibrary.map(model =>
         model.id === modelId
@@ -144,7 +144,7 @@ const AdminPanel: React.FC = () => {
   const handleRunDistillation = async () => {
     setIsTraining(true);
     setTrainingLog(['[1/3] Starting local "Teacher" model training... (simulated 10s job)']);
-    
+
     // Simulate log progression
     setTimeout(() => {
       setTrainingLog(log => [...log, '[2/3] "Teacher" trained. Distilling "Student Model"...']);
@@ -170,8 +170,8 @@ const AdminPanel: React.FC = () => {
   return (
     <div style={{ fontFamily: 'sans-serif', padding: '0 clamp(10px, 2vw, 0px)' }}>
       {/* Simple Title */}
-      <h1 style={{ 
-        margin: '0 0 clamp(20px, 4vw, 30px) 0', 
+      <h1 style={{
+        margin: '0 0 clamp(20px, 4vw, 30px) 0',
         fontSize: 'clamp(24px, 4vw, 28px)',
         color: '#005CA9'
       }}>
@@ -234,7 +234,7 @@ const AdminPanel: React.FC = () => {
               animation: 'packet-to-broker-left 3s ease-in-out infinite'
             }} />
           </div>
-          
+
           <div style={{
             position: 'absolute',
             top: '75px',
@@ -510,48 +510,48 @@ const AdminPanel: React.FC = () => {
                         }}>
                           <input
                             type="checkbox"
-                        checked={model.status === 'Active'}
-                        onChange={() => handleToggleModel(model.id)}
-                        style={{ display: 'none' }}
-                      />
-                      <span style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        background: model.status === 'Active' ? '#005CA9' : '#ccc',
-                        borderRadius: '24px',
-                        transition: 'all 0.3s'
-                      }}>
-                        <span style={{
-                          position: 'absolute',
-                          content: '',
-                          height: '18px',
-                          width: '18px',
-                          left: model.status === 'Active' ? '28px' : '3px',
-                          bottom: '3px',
-                          background: 'white',
-                          borderRadius: '50%',
-                          transition: 'all 0.3s'
-                        }} />
-                      </span>
-                    </label>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-        <p style={{
-          marginTop: '15px',
-          fontSize: 'clamp(12px, 2vw, 13px)',
-          color: '#666',
-          fontStyle: 'italic',
-          textAlign: 'center'
-        }}>
-          ⚠️ Deactivated models will be excluded from all FSO Consensus Panels.
-        </p>
+                            checked={model.status === 'Active'}
+                            onChange={() => handleToggleModel(model.id)}
+                            style={{ display: 'none' }}
+                          />
+                          <span style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            right: 0,
+                            bottom: 0,
+                            background: model.status === 'Active' ? '#005CA9' : '#ccc',
+                            borderRadius: '24px',
+                            transition: 'all 0.3s'
+                          }}>
+                            <span style={{
+                              position: 'absolute',
+                              content: '',
+                              height: '18px',
+                              width: '18px',
+                              left: model.status === 'Active' ? '28px' : '3px',
+                              bottom: '3px',
+                              background: 'white',
+                              borderRadius: '50%',
+                              transition: 'all 0.3s'
+                            }} />
+                          </span>
+                        </label>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p style={{
+              marginTop: '15px',
+              fontSize: 'clamp(12px, 2vw, 13px)',
+              color: '#666',
+              fontStyle: 'italic',
+              textAlign: 'center'
+            }}>
+              ⚠️ Deactivated models will be excluded from all FSO Consensus Panels.
+            </p>
           </>
         )}
       </Section>
@@ -569,8 +569,8 @@ const AdminPanel: React.FC = () => {
             💡 How It Works: "Quid Pro Quo"
           </h3>
           <p style={{ margin: 0, fontSize: 'clamp(13px, 2vw, 14px)', color: '#666', lineHeight: '1.6' }}>
-            To access the network's Student Library, you must contribute your own expertise. 
-            Train a local "Teacher" model on your unique patient data, then use FSO to create a 
+            To access the network's Student Library, you must contribute your own expertise.
+            Train a local "Teacher" model on your unique patient data, then use FSO to create a
             privacy-preserving "Student" model. Your Student joins the library, and everyone benefits!
           </p>
         </div>
@@ -663,9 +663,9 @@ const AdminPanel: React.FC = () => {
             fontWeight: '600'
           }}>
             Current Setting: {privacyLevel}% (
-            {privacyLevel < 30 ? 'Maximum Privacy' : 
-             privacyLevel < 70 ? 'Balanced' : 
-             'Maximum Accuracy'})
+            {privacyLevel < 30 ? 'Maximum Privacy' :
+              privacyLevel < 70 ? 'Balanced' :
+                'Maximum Accuracy'})
           </div>
         </div>
 

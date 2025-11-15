@@ -166,6 +166,18 @@ wheels = [
 ]
 
 [[package]]
+name = "faker"
+version = "38.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "tzdata" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/04/05/206c151fe8ca9c8e46963d6c8b6e2e281f272009dad30fe3792005393a5e/faker-38.0.0.tar.gz", hash = "sha256:797aa03fa86982dfb6206918acc10ebf3655bdaa89ddfd3e668d7cc69537331a", size = 1935705, upload-time = "2025-11-12T01:47:39.586Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4d/1e/e6d1940d2c2617d7e6a0a3fdd90e506ff141715cdc4c3ecd7217d937e656/faker-38.0.0-py3-none-any.whl", hash = "sha256:ad4ea6fbfaac2a75d92943e6a79c81f38ecff92378f6541dea9a677ec789a5b2", size = 1975561, upload-time = "2025-11-12T01:47:36.672Z" },
+]
+
+[[package]]
 name = "filelock"
 version = "3.20.0"
 source = { registry = "https://pypi.org/simple" }
@@ -179,6 +191,7 @@ name = "flower-hackathon"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "faker" },
     { name = "flwr", extra = ["simulation"] },
     { name = "numpy" },
     { name = "pandas" },
@@ -190,6 +203,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "faker", specifier = ">=38.0.0" },
     { name = "flwr", extras = ["simulation"], specifier = ">=1.23.0" },
     { name = "numpy", specifier = ">=1.24.0" },
     { name = "pandas", specifier = ">=2.3.3" },

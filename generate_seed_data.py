@@ -13,7 +13,9 @@ This script:
 """
 
 import json
+import random
 from collections import Counter
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Dict, Set, List, Tuple
 
@@ -23,6 +25,7 @@ import torch
 import torch.nn as nn
 import torchvision.models as models
 import torchxrayvision as xrv
+from faker import Faker
 from PIL import Image as PILImage
 
 
@@ -267,6 +270,13 @@ def copy_images_and_create_seeds(
     for i, pathology in enumerate(model_pathologies):
         print(f"    {i}: {pathology}")
 
+    # Initialize Faker for generating names
+    fake = Faker()
+    Faker.seed(42)  # Set seed for reproducibility
+
+    # Set random seed for reproducibility (for reviewed_at field)
+    random.seed(42)
+
     # Data structures for JSON
     patients_data = []
     exams_data = []
@@ -305,15 +315,40 @@ def copy_images_and_create_seeds(
 
         # Create patient record
         first_record = patient_df.iloc[0]
+
+        # Calculate birth year from patient age (assuming it is 2025)
+        current_year = 2025
+        patient_age = first_record["Patient Age"]
+        birth_year = None
+        if pd.notna(patient_age):
+            birth_year = current_year - int(patient_age)
+
+        # Get patient gender
+        patient_gender = (
+            str(first_record["Patient Gender"])
+            if pd.notna(first_record["Patient Gender"])
+            else None
+        )
+
+        # Generate fake names based on gender
+        first_name = None
+        last_name = None
+        if patient_gender:
+            if patient_gender.upper() == "M":
+                first_name = fake.first_name_male()
+            elif patient_gender.upper() == "F":
+                first_name = fake.first_name_female()
+            else:
+                first_name = fake.first_name()
+            last_name = fake.last_name()
+
         patient_data = {
             "id": int(patient_id),
             "external_patient_id": f"NIH_{patient_id}",
-            "first_name": None,
-            "last_name": None,
-            "birth_year": None,
-            "sex": str(first_record["Patient Gender"])
-            if pd.notna(first_record["Patient Gender"])
-            else None,
+            "first_name": first_name,
+            "last_name": last_name,
+            "birth_year": birth_year,
+            "sex": patient_gender,
         }
         patients_data.append(patient_data)
 
@@ -433,6 +468,17 @@ def copy_images_and_create_seeds(
                     )
 
                 # Create image record
+                # 95% of images should be marked as reviewed (only 5% need review)
+                reviewed_at = None
+                if random.random() < 0.95:
+                    # Generate a random reviewed timestamp within the past 30 days
+                    days_ago = random.randint(1, 30)
+                    hours_ago = random.randint(0, 23)
+                    reviewed_at = (
+                        datetime.now(timezone.utc)
+                        - timedelta(days=days_ago, hours=hours_ago)
+                    ).isoformat()
+
                 image_data = {
                     "id": image_id,
                     "exam_id": exam_id,
@@ -443,6 +489,7 @@ def copy_images_and_create_seeds(
                     "follow_up_number": int(row["Follow-up #"])
                     if pd.notna(row["Follow-up #"])
                     else 0,
+                    "reviewed_at": reviewed_at,
                 }
                 images_data.append(image_data)
             else:
