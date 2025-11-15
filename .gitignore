@@ -19,7 +19,6 @@ wheels/
 
 # Model weights
 *.pth
-*.pt
 *.ckpt
 
 # Temporary files
@@ -35,3 +34,4 @@ archive.zip:Zone.Identifier
 *.swo
 
 nih_chest_x_rays
+preprocessed_224_hospital_A

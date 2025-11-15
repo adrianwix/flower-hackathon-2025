@@ -1,0 +1,3502 @@
+[
+  {
+    "id": 111,
+    "patient_id": 111,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 180,
+    "patient_id": 180,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 208,
+    "patient_id": 208,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 218,
+    "patient_id": 218,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 230,
+    "patient_id": 230,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 231,
+    "patient_id": 231,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 232,
+    "patient_id": 232,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 286,
+    "patient_id": 286,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 289,
+    "patient_id": 289,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 363,
+    "patient_id": 363,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 381,
+    "patient_id": 381,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 421,
+    "patient_id": 421,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 545,
+    "patient_id": 545,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 570,
+    "patient_id": 570,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 573,
+    "patient_id": 573,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 624,
+    "patient_id": 624,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 733,
+    "patient_id": 733,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 818,
+    "patient_id": 818,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 831,
+    "patient_id": 831,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 938,
+    "patient_id": 938,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1006,
+    "patient_id": 1006,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1045,
+    "patient_id": 1045,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1093,
+    "patient_id": 1093,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1097,
+    "patient_id": 1097,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1103,
+    "patient_id": 1103,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1187,
+    "patient_id": 1187,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1250,
+    "patient_id": 1250,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1255,
+    "patient_id": 1255,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1285,
+    "patient_id": 1285,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1303,
+    "patient_id": 1303,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1355,
+    "patient_id": 1355,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1397,
+    "patient_id": 1397,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1423,
+    "patient_id": 1423,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1501,
+    "patient_id": 1501,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1580,
+    "patient_id": 1580,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1584,
+    "patient_id": 1584,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1650,
+    "patient_id": 1650,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1689,
+    "patient_id": 1689,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1698,
+    "patient_id": 1698,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1719,
+    "patient_id": 1719,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1723,
+    "patient_id": 1723,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1777,
+    "patient_id": 1777,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1894,
+    "patient_id": 1894,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1900,
+    "patient_id": 1900,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1969,
+    "patient_id": 1969,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 1993,
+    "patient_id": 1993,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2000,
+    "patient_id": 2000,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2007,
+    "patient_id": 2007,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2015,
+    "patient_id": 2015,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2046,
+    "patient_id": 2046,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2072,
+    "patient_id": 2072,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2227,
+    "patient_id": 2227,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2280,
+    "patient_id": 2280,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2350,
+    "patient_id": 2350,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2353,
+    "patient_id": 2353,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2411,
+    "patient_id": 2411,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2413,
+    "patient_id": 2413,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2469,
+    "patient_id": 2469,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2474,
+    "patient_id": 2474,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2492,
+    "patient_id": 2492,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2610,
+    "patient_id": 2610,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2639,
+    "patient_id": 2639,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2718,
+    "patient_id": 2718,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2750,
+    "patient_id": 2750,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2758,
+    "patient_id": 2758,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 2878,
+    "patient_id": 2878,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3029,
+    "patient_id": 3029,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3089,
+    "patient_id": 3089,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3091,
+    "patient_id": 3091,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3145,
+    "patient_id": 3145,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3186,
+    "patient_id": 3186,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3207,
+    "patient_id": 3207,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3212,
+    "patient_id": 3212,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3254,
+    "patient_id": 3254,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3269,
+    "patient_id": 3269,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3339,
+    "patient_id": 3339,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3519,
+    "patient_id": 3519,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3570,
+    "patient_id": 3570,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3585,
+    "patient_id": 3585,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3596,
+    "patient_id": 3596,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3665,
+    "patient_id": 3665,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3730,
+    "patient_id": 3730,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3789,
+    "patient_id": 3789,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 3875,
+    "patient_id": 3875,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4006,
+    "patient_id": 4006,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4017,
+    "patient_id": 4017,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4079,
+    "patient_id": 4079,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4090,
+    "patient_id": 4090,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4155,
+    "patient_id": 4155,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4247,
+    "patient_id": 4247,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4269,
+    "patient_id": 4269,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4350,
+    "patient_id": 4350,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4469,
+    "patient_id": 4469,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4517,
+    "patient_id": 4517,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4532,
+    "patient_id": 4532,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4573,
+    "patient_id": 4573,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4577,
+    "patient_id": 4577,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4578,
+    "patient_id": 4578,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 4822,
+    "patient_id": 4822,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5015,
+    "patient_id": 5015,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5079,
+    "patient_id": 5079,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5089,
+    "patient_id": 5089,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5090,
+    "patient_id": 5090,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5092,
+    "patient_id": 5092,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5110,
+    "patient_id": 5110,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5176,
+    "patient_id": 5176,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5277,
+    "patient_id": 5277,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5380,
+    "patient_id": 5380,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5515,
+    "patient_id": 5515,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5532,
+    "patient_id": 5532,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5638,
+    "patient_id": 5638,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5657,
+    "patient_id": 5657,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5666,
+    "patient_id": 5666,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5683,
+    "patient_id": 5683,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5778,
+    "patient_id": 5778,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5850,
+    "patient_id": 5850,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5927,
+    "patient_id": 5927,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5939,
+    "patient_id": 5939,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 5991,
+    "patient_id": 5991,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6057,
+    "patient_id": 6057,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6340,
+    "patient_id": 6340,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6453,
+    "patient_id": 6453,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6517,
+    "patient_id": 6517,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6596,
+    "patient_id": 6596,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6727,
+    "patient_id": 6727,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6751,
+    "patient_id": 6751,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6758,
+    "patient_id": 6758,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6769,
+    "patient_id": 6769,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6791,
+    "patient_id": 6791,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6905,
+    "patient_id": 6905,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 6985,
+    "patient_id": 6985,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 7109,
+    "patient_id": 7109,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 7179,
+    "patient_id": 7179,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 7256,
+    "patient_id": 7256,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 7317,
+    "patient_id": 7317,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 7520,
+    "patient_id": 7520,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 7572,
+    "patient_id": 7572,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 7750,
+    "patient_id": 7750,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 7806,
+    "patient_id": 7806,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 7830,
+    "patient_id": 7830,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8006,
+    "patient_id": 8006,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8042,
+    "patient_id": 8042,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8185,
+    "patient_id": 8185,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8191,
+    "patient_id": 8191,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8216,
+    "patient_id": 8216,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8295,
+    "patient_id": 8295,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8397,
+    "patient_id": 8397,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8483,
+    "patient_id": 8483,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8508,
+    "patient_id": 8508,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8522,
+    "patient_id": 8522,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8583,
+    "patient_id": 8583,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8598,
+    "patient_id": 8598,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8694,
+    "patient_id": 8694,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8885,
+    "patient_id": 8885,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 8903,
+    "patient_id": 8903,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9021,
+    "patient_id": 9021,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9073,
+    "patient_id": 9073,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9080,
+    "patient_id": 9080,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9113,
+    "patient_id": 9113,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9121,
+    "patient_id": 9121,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9185,
+    "patient_id": 9185,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9315,
+    "patient_id": 9315,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9378,
+    "patient_id": 9378,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9488,
+    "patient_id": 9488,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9508,
+    "patient_id": 9508,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9535,
+    "patient_id": 9535,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9608,
+    "patient_id": 9608,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9813,
+    "patient_id": 9813,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9826,
+    "patient_id": 9826,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 9903,
+    "patient_id": 9903,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10020,
+    "patient_id": 10020,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10028,
+    "patient_id": 10028,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10050,
+    "patient_id": 10050,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10120,
+    "patient_id": 10120,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10129,
+    "patient_id": 10129,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10314,
+    "patient_id": 10314,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10315,
+    "patient_id": 10315,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10390,
+    "patient_id": 10390,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10531,
+    "patient_id": 10531,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10544,
+    "patient_id": 10544,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10552,
+    "patient_id": 10552,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10644,
+    "patient_id": 10644,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10693,
+    "patient_id": 10693,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10701,
+    "patient_id": 10701,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10843,
+    "patient_id": 10843,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10914,
+    "patient_id": 10914,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10943,
+    "patient_id": 10943,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 10952,
+    "patient_id": 10952,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11054,
+    "patient_id": 11054,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11329,
+    "patient_id": 11329,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11450,
+    "patient_id": 11450,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11472,
+    "patient_id": 11472,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11516,
+    "patient_id": 11516,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11579,
+    "patient_id": 11579,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11592,
+    "patient_id": 11592,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11596,
+    "patient_id": 11596,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11632,
+    "patient_id": 11632,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11751,
+    "patient_id": 11751,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11755,
+    "patient_id": 11755,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11782,
+    "patient_id": 11782,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11805,
+    "patient_id": 11805,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11868,
+    "patient_id": 11868,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 11956,
+    "patient_id": 11956,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12003,
+    "patient_id": 12003,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12012,
+    "patient_id": 12012,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12015,
+    "patient_id": 12015,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12047,
+    "patient_id": 12047,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12255,
+    "patient_id": 12255,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12261,
+    "patient_id": 12261,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12263,
+    "patient_id": 12263,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12376,
+    "patient_id": 12376,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12625,
+    "patient_id": 12625,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12635,
+    "patient_id": 12635,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12649,
+    "patient_id": 12649,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12681,
+    "patient_id": 12681,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12745,
+    "patient_id": 12745,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12777,
+    "patient_id": 12777,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12829,
+    "patient_id": 12829,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12890,
+    "patient_id": 12890,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12905,
+    "patient_id": 12905,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12927,
+    "patient_id": 12927,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12975,
+    "patient_id": 12975,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12992,
+    "patient_id": 12992,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 12993,
+    "patient_id": 12993,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13068,
+    "patient_id": 13068,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13101,
+    "patient_id": 13101,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13158,
+    "patient_id": 13158,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13209,
+    "patient_id": 13209,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13211,
+    "patient_id": 13211,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13282,
+    "patient_id": 13282,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13285,
+    "patient_id": 13285,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13295,
+    "patient_id": 13295,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13380,
+    "patient_id": 13380,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13407,
+    "patient_id": 13407,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13519,
+    "patient_id": 13519,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13534,
+    "patient_id": 13534,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13579,
+    "patient_id": 13579,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13601,
+    "patient_id": 13601,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13615,
+    "patient_id": 13615,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13635,
+    "patient_id": 13635,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13653,
+    "patient_id": 13653,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13720,
+    "patient_id": 13720,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13751,
+    "patient_id": 13751,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 13882,
+    "patient_id": 13882,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14070,
+    "patient_id": 14070,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14074,
+    "patient_id": 14074,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14320,
+    "patient_id": 14320,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14440,
+    "patient_id": 14440,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14519,
+    "patient_id": 14519,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14556,
+    "patient_id": 14556,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14616,
+    "patient_id": 14616,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14653,
+    "patient_id": 14653,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14698,
+    "patient_id": 14698,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14751,
+    "patient_id": 14751,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14753,
+    "patient_id": 14753,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14788,
+    "patient_id": 14788,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14790,
+    "patient_id": 14790,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14813,
+    "patient_id": 14813,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 14889,
+    "patient_id": 14889,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15031,
+    "patient_id": 15031,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15064,
+    "patient_id": 15064,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15078,
+    "patient_id": 15078,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15087,
+    "patient_id": 15087,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15108,
+    "patient_id": 15108,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15117,
+    "patient_id": 15117,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15165,
+    "patient_id": 15165,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15173,
+    "patient_id": 15173,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15187,
+    "patient_id": 15187,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15278,
+    "patient_id": 15278,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15334,
+    "patient_id": 15334,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15344,
+    "patient_id": 15344,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15353,
+    "patient_id": 15353,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15392,
+    "patient_id": 15392,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15401,
+    "patient_id": 15401,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15496,
+    "patient_id": 15496,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15530,
+    "patient_id": 15530,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15606,
+    "patient_id": 15606,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15628,
+    "patient_id": 15628,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15654,
+    "patient_id": 15654,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15794,
+    "patient_id": 15794,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15897,
+    "patient_id": 15897,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15923,
+    "patient_id": 15923,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15956,
+    "patient_id": 15956,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 15995,
+    "patient_id": 15995,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16006,
+    "patient_id": 16006,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16036,
+    "patient_id": 16036,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16041,
+    "patient_id": 16041,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16104,
+    "patient_id": 16104,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16130,
+    "patient_id": 16130,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16240,
+    "patient_id": 16240,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16270,
+    "patient_id": 16270,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16484,
+    "patient_id": 16484,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16587,
+    "patient_id": 16587,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16616,
+    "patient_id": 16616,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16773,
+    "patient_id": 16773,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16797,
+    "patient_id": 16797,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16798,
+    "patient_id": 16798,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16896,
+    "patient_id": 16896,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 16926,
+    "patient_id": 16926,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17083,
+    "patient_id": 17083,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17255,
+    "patient_id": 17255,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17351,
+    "patient_id": 17351,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17395,
+    "patient_id": 17395,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17421,
+    "patient_id": 17421,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17504,
+    "patient_id": 17504,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17557,
+    "patient_id": 17557,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17605,
+    "patient_id": 17605,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17670,
+    "patient_id": 17670,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17726,
+    "patient_id": 17726,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17830,
+    "patient_id": 17830,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 17911,
+    "patient_id": 17911,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18003,
+    "patient_id": 18003,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18026,
+    "patient_id": 18026,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18051,
+    "patient_id": 18051,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18104,
+    "patient_id": 18104,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18126,
+    "patient_id": 18126,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18157,
+    "patient_id": 18157,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18177,
+    "patient_id": 18177,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18224,
+    "patient_id": 18224,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18286,
+    "patient_id": 18286,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18448,
+    "patient_id": 18448,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18499,
+    "patient_id": 18499,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18507,
+    "patient_id": 18507,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18558,
+    "patient_id": 18558,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18592,
+    "patient_id": 18592,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18739,
+    "patient_id": 18739,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18762,
+    "patient_id": 18762,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18942,
+    "patient_id": 18942,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 18999,
+    "patient_id": 18999,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19027,
+    "patient_id": 19027,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19177,
+    "patient_id": 19177,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19265,
+    "patient_id": 19265,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19287,
+    "patient_id": 19287,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19308,
+    "patient_id": 19308,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19367,
+    "patient_id": 19367,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19495,
+    "patient_id": 19495,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19608,
+    "patient_id": 19608,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19635,
+    "patient_id": 19635,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19661,
+    "patient_id": 19661,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19730,
+    "patient_id": 19730,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19740,
+    "patient_id": 19740,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19799,
+    "patient_id": 19799,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19812,
+    "patient_id": 19812,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19858,
+    "patient_id": 19858,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19860,
+    "patient_id": 19860,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19861,
+    "patient_id": 19861,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19880,
+    "patient_id": 19880,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 19888,
+    "patient_id": 19888,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20094,
+    "patient_id": 20094,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20160,
+    "patient_id": 20160,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20184,
+    "patient_id": 20184,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20277,
+    "patient_id": 20277,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20286,
+    "patient_id": 20286,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20294,
+    "patient_id": 20294,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20405,
+    "patient_id": 20405,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20548,
+    "patient_id": 20548,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20580,
+    "patient_id": 20580,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20600,
+    "patient_id": 20600,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20629,
+    "patient_id": 20629,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20695,
+    "patient_id": 20695,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20718,
+    "patient_id": 20718,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20768,
+    "patient_id": 20768,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20798,
+    "patient_id": 20798,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20819,
+    "patient_id": 20819,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 20945,
+    "patient_id": 20945,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21110,
+    "patient_id": 21110,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21138,
+    "patient_id": 21138,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21163,
+    "patient_id": 21163,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21184,
+    "patient_id": 21184,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21216,
+    "patient_id": 21216,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21244,
+    "patient_id": 21244,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21274,
+    "patient_id": 21274,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21287,
+    "patient_id": 21287,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21321,
+    "patient_id": 21321,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21431,
+    "patient_id": 21431,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21463,
+    "patient_id": 21463,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21466,
+    "patient_id": 21466,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21552,
+    "patient_id": 21552,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21574,
+    "patient_id": 21574,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21610,
+    "patient_id": 21610,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21818,
+    "patient_id": 21818,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 21969,
+    "patient_id": 21969,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22044,
+    "patient_id": 22044,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22084,
+    "patient_id": 22084,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22179,
+    "patient_id": 22179,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22197,
+    "patient_id": 22197,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22215,
+    "patient_id": 22215,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22272,
+    "patient_id": 22272,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22295,
+    "patient_id": 22295,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22402,
+    "patient_id": 22402,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22427,
+    "patient_id": 22427,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22431,
+    "patient_id": 22431,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22522,
+    "patient_id": 22522,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22569,
+    "patient_id": 22569,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22601,
+    "patient_id": 22601,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22684,
+    "patient_id": 22684,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22698,
+    "patient_id": 22698,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22727,
+    "patient_id": 22727,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22817,
+    "patient_id": 22817,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22824,
+    "patient_id": 22824,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22928,
+    "patient_id": 22928,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 22977,
+    "patient_id": 22977,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 23005,
+    "patient_id": 23005,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 23138,
+    "patient_id": 23138,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 23212,
+    "patient_id": 23212,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 23245,
+    "patient_id": 23245,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 23297,
+    "patient_id": 23297,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 23309,
+    "patient_id": 23309,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 23316,
+    "patient_id": 23316,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 23355,
+    "patient_id": 23355,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 23399,
+    "patient_id": 23399,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 23562,
+    "patient_id": 23562,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 24170,
+    "patient_id": 24170,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25099,
+    "patient_id": 25099,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25173,
+    "patient_id": 25173,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25444,
+    "patient_id": 25444,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25446,
+    "patient_id": 25446,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25457,
+    "patient_id": 25457,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25473,
+    "patient_id": 25473,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25492,
+    "patient_id": 25492,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25514,
+    "patient_id": 25514,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25695,
+    "patient_id": 25695,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25851,
+    "patient_id": 25851,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25914,
+    "patient_id": 25914,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 25936,
+    "patient_id": 25936,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26057,
+    "patient_id": 26057,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26196,
+    "patient_id": 26196,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26510,
+    "patient_id": 26510,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26511,
+    "patient_id": 26511,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26586,
+    "patient_id": 26586,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26641,
+    "patient_id": 26641,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26683,
+    "patient_id": 26683,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26833,
+    "patient_id": 26833,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26848,
+    "patient_id": 26848,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26860,
+    "patient_id": 26860,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26908,
+    "patient_id": 26908,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 26911,
+    "patient_id": 26911,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27011,
+    "patient_id": 27011,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27079,
+    "patient_id": 27079,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27136,
+    "patient_id": 27136,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27189,
+    "patient_id": 27189,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27194,
+    "patient_id": 27194,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27199,
+    "patient_id": 27199,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27213,
+    "patient_id": 27213,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27216,
+    "patient_id": 27216,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27266,
+    "patient_id": 27266,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27300,
+    "patient_id": 27300,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27315,
+    "patient_id": 27315,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27320,
+    "patient_id": 27320,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27359,
+    "patient_id": 27359,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27370,
+    "patient_id": 27370,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27582,
+    "patient_id": 27582,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27628,
+    "patient_id": 27628,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27668,
+    "patient_id": 27668,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27797,
+    "patient_id": 27797,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27833,
+    "patient_id": 27833,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27861,
+    "patient_id": 27861,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 27922,
+    "patient_id": 27922,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28020,
+    "patient_id": 28020,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28085,
+    "patient_id": 28085,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28088,
+    "patient_id": 28088,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28097,
+    "patient_id": 28097,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28211,
+    "patient_id": 28211,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28421,
+    "patient_id": 28421,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28499,
+    "patient_id": 28499,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28552,
+    "patient_id": 28552,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28583,
+    "patient_id": 28583,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28632,
+    "patient_id": 28632,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28723,
+    "patient_id": 28723,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28725,
+    "patient_id": 28725,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28890,
+    "patient_id": 28890,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28897,
+    "patient_id": 28897,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28924,
+    "patient_id": 28924,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28966,
+    "patient_id": 28966,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 28992,
+    "patient_id": 28992,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29134,
+    "patient_id": 29134,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29165,
+    "patient_id": 29165,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29190,
+    "patient_id": 29190,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29244,
+    "patient_id": 29244,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29334,
+    "patient_id": 29334,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29390,
+    "patient_id": 29390,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29404,
+    "patient_id": 29404,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29470,
+    "patient_id": 29470,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29537,
+    "patient_id": 29537,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29614,
+    "patient_id": 29614,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29654,
+    "patient_id": 29654,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29756,
+    "patient_id": 29756,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29801,
+    "patient_id": 29801,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29808,
+    "patient_id": 29808,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29903,
+    "patient_id": 29903,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29921,
+    "patient_id": 29921,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29925,
+    "patient_id": 29925,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29991,
+    "patient_id": 29991,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 29998,
+    "patient_id": 29998,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 30023,
+    "patient_id": 30023,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 30064,
+    "patient_id": 30064,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 30280,
+    "patient_id": 30280,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 30342,
+    "patient_id": 30342,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 30523,
+    "patient_id": 30523,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  },
+  {
+    "id": 30536,
+    "patient_id": 30536,
+    "exam_datetime": null,
+    "reason": "NIH Chest X-ray dataset - Follow-up series",
+    "created_by": null
+  }
+]

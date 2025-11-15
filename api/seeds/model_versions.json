@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "torchxrayvision_densenet121_res224_all",
+    "description": "DenseNet121 trained on multiple chest X-ray datasets (res224-all weights) for multi-label classification",
+    "artifact_path": "torchxrayvision://densenet121-res224-all"
+  },
+  {
+    "id": 2,
+    "name": "resnet18_fedprox_round6",
+    "description": "ResNet18 trained with FedProx for 6 rounds (AUROC 72.88%) for binary Finding/No Finding classification",
+    "artifact_path": "ml/models/version1_job1124_resnet18_FedProx6Rounds_round6_auroc7288.pt"
+  }
+]

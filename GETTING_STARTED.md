@@ -53,10 +53,10 @@ sudo apt-get install postgresql postgresql-contrib
 sudo service postgresql start
 
 # Create database
-sudo -u postgres createdb radiology_review
+sudo -u postgres createdb postgres
 
 # Set environment variable
-export DATABASE_URL="postgresql://postgres:postgres@localhost:5432/radiology_review"
+export DATABASE_URL="postgresql://postgres:postgres@localhost:5432/postgres"
 ```
 
 #### Option B: Docker PostgreSQL
@@ -65,11 +65,11 @@ export DATABASE_URL="postgresql://postgres:postgres@localhost:5432/radiology_rev
 docker run -d \
   --name radiology-postgres \
   -e POSTGRES_PASSWORD=postgres \
-  -e POSTGRES_DB=radiology_review \
+  -e POSTGRES_DB=postgres \
   -p 5432:5432 \
   postgres:15
   
-export DATABASE_URL="postgresql://postgres:postgres@localhost:5432/radiology_review"
+export DATABASE_URL="postgresql://postgres:postgres@localhost:5432/postgres"
 ```
 
 #### Option C: Cloud Database (Render, Supabase, etc.)
@@ -181,7 +181,7 @@ python init_db.py
 
 **Solution:** Update connection string with correct credentials
 ```bash
-export DATABASE_URL="postgresql://your_user:your_password@localhost:5432/radiology_review"
+export DATABASE_URL="postgresql://your_user:your_password@localhost:5432/postgres"
 ```
 
 ### Issue: "Module not found" errors
@@ -202,7 +202,7 @@ cp .env.example .env
 
 Edit `.env`:
 ```
-DATABASE_URL=postgresql://postgres:postgres@localhost:5432/radiology_review
+DATABASE_URL=postgresql://postgres:postgres@localhost:5432/postgres
 API_HOST=0.0.0.0
 API_PORT=8000
 ```

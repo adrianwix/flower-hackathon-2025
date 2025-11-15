@@ -1,0 +1,7 @@
+"""
+Services module exports.
+"""
+
+from services.prediction_service import PredictionService
+
+__all__ = ["PredictionService"]

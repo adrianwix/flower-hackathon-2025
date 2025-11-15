@@ -22,14 +22,6 @@ from sqlmodel import (
 # =========================================================
 
 
-class ReviewStatus(str, Enum):
-    """Workflow status for an image in the review process"""
-
-    PENDING = "pending"
-    IN_REVIEW = "in_review"
-    COMPLETED = "completed"
-
-
 class UserRole(str, Enum):
     """User roles in the system"""
 
@@ -133,10 +125,8 @@ class Image(SQLModel, table=True):
         default=None, sa_column=Column(ARRAY(Text))
     )
 
-    # Workflow
-    review_status: str = Field(
-        default=ReviewStatus.PENDING.value, nullable=False, index=True
-    )
+    # Workflow - image is pending review if reviewed_at is None
+    reviewed_at: Optional[datetime] = Field(default=None, nullable=True, index=True)
     created_at: datetime = Field(
         default_factory=lambda: datetime.now(timezone.utc), nullable=False
     )

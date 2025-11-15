@@ -1,0 +1,13 @@
+{
+  "total_patients": 500,
+  "total_exams": 500,
+  "total_images": 5470,
+  "images_copied": 5470,
+  "images_missing": 0,
+  "ml_predictions": 103930,
+  "doctor_labels": 7736,
+  "model_versions": [
+    "torchxrayvision_densenet121_res224_all",
+    "resnet18_fedprox_round6"
+  ]
+}
